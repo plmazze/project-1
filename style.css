@@ -1,4 +1,18 @@
+:root {
+  --clr-primary-200: hsl(0, 36%, 70%);
+  --clr-primary-400: hsl(0, 93%, 68%);
 
+  --clr-neutral-100: hsl(0, 6%, 24%);
+
+  --ff-primary: "Josefin Sans", serif;
+
+  --bg-primary: linear-gradient(135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%));
+  --bg-secondary: linear-gradient(135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%));
+
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-600: 600;
+}
 /* Box sizing rules */
 *,
 *::before,
@@ -29,6 +43,9 @@ ol[role='list'] {
 body {
   min-height: 100vh;
   line-height: 1.5;
+  background-image: url('images/bg-pattern-desktop.svg');
+  font-size: 1rem;
+  font-family: var(--ff-primary);
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -73,6 +90,10 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-body {
-  background-image: url('images/bg-pattern-desktop.svg')
+h1 {
+  font-weight: var(--fw-600);
+}
+
+p {
+  font-weight: var(--fw-300);
 }
